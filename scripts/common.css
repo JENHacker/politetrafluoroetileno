@@ -4,6 +4,7 @@ body{
 }
 #main-continer{
     margin: 0 auto;
+    background-color: darkorchid;
 }
 #que-culaso{
     transform: translate(0, 4px);
@@ -11,6 +12,15 @@ body{
 ul{
     list-style-type: none;
 }
+.menu ul li{
+    float: left;
+    margin: 0;
+    padding: 1px 5px;
+    border: 2px solid black;
+}
 h1{
     color: aqua;
+    margin: 0;
+    border: 2px solid magenta;
+    font: bold 36px sans-serif;
 }
