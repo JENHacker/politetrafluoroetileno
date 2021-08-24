@@ -1,22 +1,57 @@
 body{
     text-align: center;
-    margin-bottom: 0;
+    background-color: #a78fd3;
 }
-#main-continer{
-    margin: 0 auto;
-    background-color: darkorchid;
-}
-#que-culaso{
-    transform: translate(0, 4px);
+a{
+    color: initial;
+    text-decoration: none;
 }
 ul{
     list-style-type: none;
 }
+#main-continer{
+    margin: 0 auto;
+    border-radius: 7px;
+    background-color: #e9e4f4;
+}
+.header{
+    height: 150px;
+    border-bottom: 2px solid #d3c7e9;
+    display: block;
+}
+.menu ul{
+    margin: 0;
+    padding-left: 2%;
+}
 .menu ul li{
     float: left;
-    margin: 0;
+    margin: 63px 3%;
     padding: 1px 5px;
-    border: 2px solid black;
+    border: 2px solid #d3c7e9;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+#selected-nav{
+    
+}
+#logo-list{
+    border: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: initial;
+}
+#logo{
+    margin: 10px;
+    width: 368px;
+    height: 125px;
+}
+#que-culaso{
+    transform: translate(0, 4px);
+}
+#amogus-poto{
+    transform: rotate(13.5deg) translate(0, -45px);
 }
 h1{
     color: aqua;
