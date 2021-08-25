@@ -10,52 +10,100 @@ ul{
     list-style-type: none;
 }
 #main-continer{
+    position: relative;
     margin: 0 auto;
     border-radius: 7px;
     background-color: #e9e4f4;
 }
 .header{
+    position: relative;
+    z-index: 1;
+    background-color: #e9e4f4;
     height: 150px;
-    border-bottom: 2px solid #d3c7e9;
     display: block;
+    border-bottom: 2px solid #d3c7e9;
+    border-radius: 10px 10px 0 0;
 }
 .menu ul{
     margin: 0;
     padding-left: 2%;
 }
 .menu ul li{
-    float: left;
+    display: inline-block;
     margin: 63px 3%;
-    padding: 1px 5px;
+}
+.menu ul li p{
+    margin: 0;
+    padding: 1px 3px;
     border: 2px solid #d3c7e9;
     border-top: none;
     border-radius: 0 0 10px 10px;
 }
-#selected-nav{
-    
+#selected-li{
+    margin-top: 47px;
+    margin-bottom: 47px;
+    animation-name: margin-expand;
+    animation-duration: 3s;
 }
-#logo-list{
-    border: none;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: initial;
+@keyframes margin-expand{
+    from {margin-left: 0; margin-right: 0;}
+    to {margin-left: 3%; margin-right: 3%;}
+}
+#hole-selected-nav{
+    padding: 3px;
+    background-color: #e9e4f4;
+    border-radius: 10px;
+}
+#selected-nav{
+    padding: 12px 15px;
+    background-image: linear-gradient(90deg, #6f49b7 0%, #9b81cd 50%,#6f49b7 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 7px;
+    background-position: 0 100%;
+    border-radius: 50%;
+    animation-name: anim-box-nav;
+    animation-duration: 1s ;
+}
+@keyframes anim-box-nav{
+    from {background-position: 0 0;}
+    to {background-position: 0 100%;}
 }
 #logo{
     margin: 10px;
     width: 368px;
     height: 125px;
 }
+#logo-list{
+    float: left;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: initial;
+}
+#content h1{
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    color: #7d5bbe;
+    font-size: 60px;
+    font-family: ;
+    transform: translate(0, -1px);
+    animation-name: translate-title;
+    animation-duration: 2s;
+}
+@keyframes translate-title{
+    from {transform: translate(0, -67px);}
+    to {transform: translate(0, -1px);}
+}
+#content h1 span{
+    border: 3px solid #d3c7e9;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
 #que-culaso{
     transform: translate(0, 4px);
 }
 #amogus-poto{
     transform: rotate(13.5deg) translate(0, -45px);
-}
-h1{
-    color: aqua;
-    margin: 0;
-    border: 2px solid magenta;
-    font: bold 36px sans-serif;
 }
