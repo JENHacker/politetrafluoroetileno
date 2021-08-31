@@ -1,1 +1,0 @@
-alert("eres gay, no lo digo yo, lo dice la pagina")
