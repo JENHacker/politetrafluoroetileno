@@ -1,0 +1,42 @@
+#grid-container{
+    width:800px;
+    height:500px;
+    margin:0 auto;
+}
+.grid-items{
+    position:relative;
+    display: inline-block;
+    top:180px;
+    margin:0 60px;
+    padding: 2%;
+    width:80px;
+    height:80px;
+    background: #fff;
+    border: solid #a78fd3;
+    border-width: 2px;
+    border-radius: 50%;
+    transition:0.75s;
+}
+.grid-items:hover{
+    z-index:10;
+    border-width:2px;
+    border-radius: 10%;
+    transform: scale(3,4);
+}
+.grid-items:hover > img{
+    top:-5%;
+}
+.grid-items img{
+    width:100%;
+    height:auto;
+    position:relative;
+    top:40%;
+    transition:0.75s;
+}
+.grid-items p{
+    opacity: 0;
+    transition:0.75s;
+}
+.grid-items:hover p{
+    opacity: 1;
+}
