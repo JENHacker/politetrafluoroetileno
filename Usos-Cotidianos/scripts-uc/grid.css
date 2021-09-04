@@ -1,0 +1,61 @@
+#grid-container{
+    width:800px;
+    height:500px;
+    margin:0 auto;
+}
+.grid-items{
+    position:relative;
+    display: inline-block;
+    opacity:1;
+    top:180px;
+    margin:0 60px;
+    padding: 2%;
+    width:80px;
+    height:80px;
+    background: #fff;
+    border: solid #a78fd3;
+    border-width: 2px;
+    border-radius: 50%;
+    transition:0.75s;
+    animation-name: initial-opacity;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(1, 0.01, 0.36, 0.83);
+}
+@keyframes initial-opacity{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+.grid-items:hover{
+    z-index:10;
+    border-width:2px;
+    border-radius: 10% 10% 30% 30%;
+    transform: scale(3,4);
+}
+.grid-items:hover > img{
+    top:-5%;
+}
+.grid-items img{
+    width:100%;
+    height:auto;
+    position:relative;
+    top:40%;
+    transition:0.5s;
+}
+.grid-items p, .grid-items h2{
+    opacity: 0;
+    transition:0.5s;
+}
+.grid-items h2{
+    text-align: center;
+    font-size:6px;
+    border-bottom:1px solid #a78fd3;
+}
+.grid-items p{
+    text-align: justify;
+    font-size: 5px;
+    color: #000;
+    text-shadow: 0.5px 0.5px 0.5px #808080bd;
+}
+.grid-items:hover p, .grid-items:hover h2{
+    opacity: 1;
+}
