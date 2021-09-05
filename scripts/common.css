@@ -6,6 +6,7 @@
 body{
     font-family: 'Roboto';
     text-align: center;
+    margin-bottom: 0;
     color:#7d5bbe;
     text-shadow: 1px 1px 1px #a78fd3;
     background-color: #a78fd3;
@@ -20,6 +21,8 @@ ul{
 #main-continer{
     position: relative;
     margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #905eff;
     border-radius: 7px;
     background-color: #e9e4f4;
 }
@@ -144,7 +147,7 @@ ul{
     to{opacity: 0;transform: translate(0);}
 }
 #lists-section ul li h2{
-    border:none;
+    border-bottom:0px solid transparent;
     transition: 0.2s;
 }
 #lists-section ul li:hover h2{
@@ -154,16 +157,9 @@ ul{
     opacity: 1;
     transform: translate(0);
 }
-#circle{
-    width: auto;
-    height:1px;
-    border-top: 79px solid #a78fd3;
-    background:#a78fd3;
-    border-radius:50% 50% 0 0;
-}
 footer{
     display: grid;
-    padding: 0 0 20px;
+    padding: 20px 0;
     height: 250px;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: auto;
