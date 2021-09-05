@@ -116,7 +116,7 @@ ul{
     border-radius: 0 0 10px 10px;
 }
 #lists-section{
-    height: 400px;
+    padding-bottom: 10px;
     border-top: 2px solid #d3c7e9;
     border-bottom: 2px solid #d3c7e9;
     margin-top: 30px; 
