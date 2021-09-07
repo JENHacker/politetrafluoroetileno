@@ -131,13 +131,18 @@ ul{
     width: 17vw;
 }
 #lists-section ul li p{
+    text-align: justify;
+    color:#000;
+    text-shadow: 2px 2px 4px #808080bd;
+}
+#lists-section ul li img{
+    box-shadow:0 0 10px 2px #808080bd;
+}
+#lists-section ul li p, #lists-section ul li img{
     opacity: 0;
     padding: 0;
     position:relative;
     transform: translate(0,45px);
-    text-align: justify;
-    color:#000;
-    text-shadow: 2px 2px 4px #808080bd;
     animation-name: lists-opacity;
     animation-duration: 0.5s;
     transition: 0.5s;
