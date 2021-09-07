@@ -137,6 +137,7 @@ ul{
 }
 #lists-section ul li img{
     box-shadow:0 0 10px 2px #808080bd;
+    width:100%;
 }
 #lists-section ul li p, #lists-section ul li img{
     opacity: 0;
