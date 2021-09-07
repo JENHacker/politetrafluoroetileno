@@ -138,6 +138,7 @@ ul{
 #lists-section ul li img{
     box-shadow:0 0 10px 2px #808080bd;
     width:100%;
+    height:auto;
 }
 #lists-section ul li p, #lists-section ul li img{
     opacity: 0;
@@ -159,7 +160,7 @@ ul{
 #lists-section ul li:hover h2{
     border-bottom: 4px solid #6f49b7;
 }
-#lists-section ul li:hover > p{
+#lists-section ul li:hover > p, #lists-section ul li:hover > img{
     opacity: 1;
     transform: translate(0);
 }
